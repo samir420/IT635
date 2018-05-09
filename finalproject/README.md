@@ -37,3 +37,23 @@ Final Deliverables:
 	Implement one of your common queries as a stored procedure
 	Document your database layout in UML
 	All midterm deliverables are still required
+
+
+Stored Procedure:
+	getusers($username); // this stored procedure is running in all php files
+	// It gets the firstname and lastname based on the username
+
+MongoDB:
+	"Add note" feature on the website is implemented using MongoDB.
+
+Increment Backups with Rotation:
+	//Binary logs are enabled in the server
+	//Expire date set to 10 days
+	//mysqldump.sh scripts flushes the logs before creating a full backup of the client database.
+	//the script is added in crontab to run once a day.
+
+Live Replication:
+	//Another instance of AWS has been created.
+	//Added Configuration to read Master binary logs
+	//Started the slave
+
